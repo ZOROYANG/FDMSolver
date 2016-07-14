@@ -1,0 +1,30 @@
+number of inner points: 1
+number of boundary points: 6
+the reciprocal of minimum unit: (2.500000, 2.500000, 5.000000)the reciprocal of the square of minimum unit: (6.250000, 6.250000, 25.000000)Order of every point in cubic.
+Point at (0, 0, 0) is encoded as: -1
+Point at (0, 0, 1) is encoded as: -1
+Point at (0, 0, 2) is encoded as: -1
+Point at (0, 1, 0) is encoded as: -1
+Point at (0, 1, 1) is encoded as: 1
+Point at (0, 1, 2) is encoded as: -1
+Point at (0, 2, 0) is encoded as: -1
+Point at (0, 2, 1) is encoded as: -1
+Point at (0, 2, 2) is encoded as: -1
+Point at (1, 0, 0) is encoded as: -1
+Point at (1, 0, 1) is encoded as: 2
+Point at (1, 0, 2) is encoded as: -1
+Point at (1, 1, 0) is encoded as: 3
+Point at (1, 1, 1) is encoded as: 0
+Point at (1, 1, 2) is encoded as: 4
+Point at (1, 2, 0) is encoded as: -1
+Point at (1, 2, 1) is encoded as: 5
+Point at (1, 2, 2) is encoded as: -1
+Point at (2, 0, 0) is encoded as: -1
+Point at (2, 0, 1) is encoded as: -1
+Point at (2, 0, 2) is encoded as: -1
+Point at (2, 1, 0) is encoded as: -1
+Point at (2, 1, 1) is encoded as: 6
+Point at (2, 1, 2) is encoded as: -1
+Point at (2, 2, 0) is encoded as: -1
+Point at (2, 2, 1) is encoded as: -1
+Point at (2, 2, 2) is encoded as: -1
