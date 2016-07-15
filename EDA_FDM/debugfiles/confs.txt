@@ -3,5 +3,5 @@ origin point:
 length in axis1, axis2, axis3:
     (0.800000, 0.800000, 0.400000)
 segmentation in axis1, axis2, axis3
-    (1, 1, 1)
+    (2, 2, 1)
 dielectric: 1.000000

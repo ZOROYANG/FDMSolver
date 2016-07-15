@@ -1,30 +1,51 @@
-number of inner points: 1
-number of boundary points: 6
-the reciprocal of minimum unit: (2.500000, 2.500000, 5.000000)the reciprocal of the square of minimum unit: (6.250000, 6.250000, 25.000000)Order of every point in cubic.
+number of inner points: 4
+number of boundary points: 16
+the reciprocal of minimum unit: (5.000000, 5.000000, 5.000000)the reciprocal of the square of minimum unit: (25.000000, 25.000000, 25.000000)Order of every point in cubic.
 Point at (0, 0, 0) is encoded as: -1
 Point at (0, 0, 1) is encoded as: -1
 Point at (0, 0, 2) is encoded as: -1
 Point at (0, 1, 0) is encoded as: -1
-Point at (0, 1, 1) is encoded as: 1
+Point at (0, 1, 1) is encoded as: 9
 Point at (0, 1, 2) is encoded as: -1
 Point at (0, 2, 0) is encoded as: -1
-Point at (0, 2, 1) is encoded as: -1
+Point at (0, 2, 1) is encoded as: 8
 Point at (0, 2, 2) is encoded as: -1
+Point at (0, 3, 0) is encoded as: -1
+Point at (0, 3, 1) is encoded as: -1
+Point at (0, 3, 2) is encoded as: -1
 Point at (1, 0, 0) is encoded as: -1
-Point at (1, 0, 1) is encoded as: 2
+Point at (1, 0, 1) is encoded as: 10
 Point at (1, 0, 2) is encoded as: -1
-Point at (1, 1, 0) is encoded as: 3
+Point at (1, 1, 0) is encoded as: 16
 Point at (1, 1, 1) is encoded as: 0
 Point at (1, 1, 2) is encoded as: 4
-Point at (1, 2, 0) is encoded as: -1
-Point at (1, 2, 1) is encoded as: 5
-Point at (1, 2, 2) is encoded as: -1
+Point at (1, 2, 0) is encoded as: 18
+Point at (1, 2, 1) is encoded as: 1
+Point at (1, 2, 2) is encoded as: 6
+Point at (1, 3, 0) is encoded as: -1
+Point at (1, 3, 1) is encoded as: 15
+Point at (1, 3, 2) is encoded as: -1
 Point at (2, 0, 0) is encoded as: -1
-Point at (2, 0, 1) is encoded as: -1
+Point at (2, 0, 1) is encoded as: 11
 Point at (2, 0, 2) is encoded as: -1
-Point at (2, 1, 0) is encoded as: -1
-Point at (2, 1, 1) is encoded as: 6
-Point at (2, 1, 2) is encoded as: -1
-Point at (2, 2, 0) is encoded as: -1
-Point at (2, 2, 1) is encoded as: -1
-Point at (2, 2, 2) is encoded as: -1
+Point at (2, 1, 0) is encoded as: 17
+Point at (2, 1, 1) is encoded as: 2
+Point at (2, 1, 2) is encoded as: 5
+Point at (2, 2, 0) is encoded as: 19
+Point at (2, 2, 1) is encoded as: 3
+Point at (2, 2, 2) is encoded as: 7
+Point at (2, 3, 0) is encoded as: -1
+Point at (2, 3, 1) is encoded as: 14
+Point at (2, 3, 2) is encoded as: -1
+Point at (3, 0, 0) is encoded as: -1
+Point at (3, 0, 1) is encoded as: -1
+Point at (3, 0, 2) is encoded as: -1
+Point at (3, 1, 0) is encoded as: -1
+Point at (3, 1, 1) is encoded as: 12
+Point at (3, 1, 2) is encoded as: -1
+Point at (3, 2, 0) is encoded as: -1
+Point at (3, 2, 1) is encoded as: 13
+Point at (3, 2, 2) is encoded as: -1
+Point at (3, 3, 0) is encoded as: -1
+Point at (3, 3, 1) is encoded as: -1
+Point at (3, 3, 2) is encoded as: -1

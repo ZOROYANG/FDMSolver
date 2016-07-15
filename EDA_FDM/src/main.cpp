@@ -10,10 +10,11 @@ double ori[3] = {0., 0., 0.};
 double len[3] = {0.8, 0.8, 0.4};
 
 // segmentation of 3 edges
-int sa[3] = {1, 1, 1};
+int sa[3] = {2, 2, 1};
 double diele = 1.;
 
 int main(){
+	//scanf("%d %d %d", &sa[0], &sa[1], &sa[2]);
     Configure macro_conf(ori, len, sa, diele);
     macro_conf.Debug();
     Matrix_Sparse A11, A12, A21, A22;

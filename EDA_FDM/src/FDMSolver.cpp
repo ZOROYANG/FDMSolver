@@ -35,7 +35,7 @@ FDM_Solver::FDM_Solver(Configure mconf, Matrix_Sparse a11, Matrix_Sparse a12, Ma
 			points[i][j] = new int[sa[2]];
 		}
 	}
-
+/*
 	// assign the index of every point in matrix A
 	int bidx = 0;	// boundary points index in A
 	int iidx = 0;	// inner points index in A
@@ -71,6 +71,82 @@ FDM_Solver::FDM_Solver(Configure mconf, Matrix_Sparse a11, Matrix_Sparse a12, Ma
 			}
 		}
 	}
+*/
+	for(int i = 0; i < sa[0]; ++ i){
+		for(int j = 0; j < sa[1]; ++ j){
+			for(int k = 0; k < sa[2]; ++ k){
+				points[i][j][k] = -1;
+			}
+		}
+	}
+
+	int idx = 0;
+	for(int i = 1; i < sa[0] - 1; ++ i){
+	    for(int j = 1; j < sa[1] - 1; ++ j){
+	        for(int k = 1; k < sa[2] - 1; ++ k){
+	            points[i][j][k] = idx;
+	            ++ idx;
+	        }
+	    }
+	}
+	/* view the cubic this way, your left is its left!
+	 *   ______
+	 *  /     /|
+	 * /_____/ |
+	 * |     | |
+	 * |     | /
+	 * |_____|/
+	 */
+
+	// bottom
+	idx = inum;
+	for(int j = 1; j < sa[1] - 1; ++ j){
+	    for(int i = 1; i < sa[0] - 1; ++ i){
+	        points[i][j][0] = idx;
+	        ++ idx;
+	    }
+	}
+
+	// left
+	for(int k = 1; k < sa[2] - 1; ++ k){
+	    for(int j = sa[1] - 2; j > 0; -- j){
+	        points[0][j][k] = idx;
+	        ++ idx;
+	    }
+	}
+
+	// front
+	for(int k = 1; k < sa[2] - 1; ++ k){
+	    for(int i = 1; i < sa[0] - 1; ++ i){
+	        points[i][0][k] = idx;
+	        ++ idx;
+	    }
+	}
+
+	// right
+	for(int k = 1; k < sa[2] - 1; ++ k){
+	    for(int j = 1; j < sa[1] - 1; ++ j){
+	        points[sa[0] - 1][j][k] = idx;
+	        ++ idx;
+	    }
+	}
+
+	// back
+	for(int k = 1; k < sa[2] - 1; ++ k){
+	    for(int i = sa[0] - 2; i > 0; -- i){
+	        points[i][sa[1] - 1][k] = idx;
+	        ++ idx;
+	    }
+	}
+
+	// top
+	for(int j = 1; j < sa[1] - 1; ++ j){
+		for(int i = 1; i < sa[0] - 1; ++ i){
+			points[i][j][sa[2] - 1] = idx;
+			++ idx;
+		}
+	}
+
 
 	this->Construct_Matrix_A11();
 	this->A11.Debug("A11.txt");
@@ -110,11 +186,11 @@ FDM_Solver::~FDM_Solver() {
 	this->A12.matrixFree();
 	this->A21.matrixFree();
 	this->A22.matrixFree();
-/*
+
 	delete[] Cap.i;
 	delete[] Cap.p;
 	delete[] Cap.x;
-*/
+
 }
 
 void FDM_Solver::Construct_Matrix_A11(){
